@@ -14,7 +14,7 @@ function cacheImages(images) {
 }
 const {width, height} = Dimensions.get('window');
 
-export default class App extends React.Component {
+export default class Login extends Component {
 
   constructor() {
     super()
@@ -72,7 +72,7 @@ export default class App extends React.Component {
              
             
             </TouchableOpacity>
-            <TouchableOpacity style= {styles.G} activeOpacity ={0.5} >
+            <TouchableOpacity style= {styles.G} activeOpacity ={0.5} onPress={()=>{this.props.navigation.navigate("Signup");}} >
             
          
              
